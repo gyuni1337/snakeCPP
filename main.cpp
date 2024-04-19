@@ -15,7 +15,7 @@ Fruit fruit;
 void render() {
     system("cls");
     if(mainCharacter.position[0] == 0 || mainCharacter.position[0] == 20 || mainCharacter.position[1] == 0 || mainCharacter.position[1] == 20) {
-        system("pause");
+        gameOver = true;
     } else {
     map.render(mainCharacter.position, mainCharacter.size, fruit.position);
     cout << "PLAYER POSITION: " << mainCharacter.position[0] << " | " << mainCharacter.position[1] << endl;
@@ -28,7 +28,7 @@ int main() {
 mainCharacter.position = { map.width/2, map.height/2};
     render();
     while(!gameOver) {
-        if (_kbhit()) { // Keyboard hit
+        if (_kbhit()) {
             switch (_getch()) {
                 case 'a':
                     mainCharacter.position[1]--;
