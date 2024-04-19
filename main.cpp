@@ -18,8 +18,8 @@ void render() {
         system("pause");
     } else {
     map.render(mainCharacter.position, mainCharacter.size, fruit.position);
-    cout << mainCharacter.position[0] << " | " << mainCharacter.position[1] << endl;
-    cout << fruit.position[0] << " | " << fruit.position[1] << endl;
+    cout << "PLAYER POSITION: " << mainCharacter.position[0] << " | " << mainCharacter.position[1] << endl;
+    cout << "FRUIT POSITION: " << fruit.position[0] << " | " << fruit.position[1] << endl;
     }
 }
 

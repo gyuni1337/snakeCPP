@@ -1,13 +1,8 @@
 #include <vector>
-#include <iostream>
-
-using namespace std;
-
 
 class Fruit {
     public:
-        vector<int> position = {rand() % 20, rand() % 20};
-
+        std::vector<int> position = {rand() % 20, rand() % 20};
 
         void newFruit() {
             position = {rand() % 20, rand() % 20};

@@ -19,10 +19,8 @@ class Map {
                 cout << "F ";
             }
 
-            else if (i == playerPosition[0] && j >= playerPosition[1] && j < playerPosition[1] + size) {
-             
-                 cout << "P ";
-                                        
+          else if (i == playerPosition[0] && j >= playerPosition[1] && j < playerPosition[1] + size) {
+                    cout << "P ";
             }
             else {
                 cout << "  ";
@@ -30,10 +28,6 @@ class Map {
         }
         cout << "\r\n";
     }
-
-        }
-
-        void loadPlayer() {
 
         }
 
